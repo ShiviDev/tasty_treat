@@ -1,0 +1,61 @@
+#### Create a new user
+
+# POST http://localhost:3000/auth/signup
+# content-type: application/json
+
+# {
+#     "email":"asdf@akdjf.com",
+#     "password":"lkdjfkdfd",
+#     "firstName":"shivani",
+#     "lastName":"Bhat"
+# }
+
+#  GET http://localhost:3000/auth
+#  {
+    
+#  }
+
+# POST http://localhost:3000/auth/login
+# content-type: application/json
+
+# {
+#     "email":"shiv@gmail.com",
+#     "password":"Simple!23"
+# }
+
+
+# GET http://localhost:3000/auth/profile
+# authorization: Bearer ""
+
+
+# POST http://localhost:3000/menu/addItems
+# content-type: application/json
+
+# {
+#     "items":[]
+# }
+
+#GET http://localhost:3000/menu
+
+POST http://localhost:3000/order/createOrder
+content-type: application/json
+
+{
+    "address": {
+        "fullName": "vaith",
+        "address1": "dfdf",
+        "address2": "fdfd",
+        "city": "fdfd",
+        "state": "",
+        "postalCode": "424",
+        "phone": "42424242"
+    },
+    "userId":"86ef8623-1e00-4d40-86a7-be63b444cc8c",
+    "paymentMethod": "card",
+    "orderItems": [],
+    "amounts": {
+        "subtotal": 0,
+        "shipping": 20,
+        "total": 20
+    }
+}
